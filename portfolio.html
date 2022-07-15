@@ -11,29 +11,29 @@
       rel="stylesheet"
     />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header-menu">
       <div class="header container">
-        <a href="index.html" class="logo">
-          <span class="logo accent">Web</span>Studio</a
-        >
-        <nav>
-          <ul class="menu-items">
+        <nav class="navigation">
+          <a href="index.html" class="logo">
+            <span class="logo accent">Web</span>Studio</a
+          >
+          <ul class="menu-list">
             <li class="menu-item">
               <a href="./index.html" class="nav-item">Студия</a>
             </li>
             <li class="menu-item">
-              <a href="./portfolio.html" class="nav-item">Портфолио</a>
+              <a href="./portfolio.html" class="nav-item current">Портфолио</a>
             </li>
             <li class="menu-item">
               <a href="" class="nav-item">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="contact-items">
+        <ul class="contact-list">
           <li class="contact-item">
             <a href="mailto:info@devstudio.com" class="contacts"
               >info@devstudio.com</a
@@ -48,79 +48,130 @@
     <section class="section">
       <div class="container">
         <h2 class="visually-hidden">Список</h2>
-        <ul class="btn-items">
-          <li><button class="button" type="button">Все</button></li>
-          <li><button class="button" type="button">Веб-сайты</button></li>
-          <li><button class="button" type="button">Приложения</button></li>
-          <li><button class="button" type="button">Дизайн</button></li>
-          <li><button class="button" type="button">Маркетинг</button></li>
+        <ul class="btn-list">
+          <li class="btn-item">
+            <button class="button" type="button">Все</button>
+          </li>
+          <li class="btn-item">
+            <button class="button" type="button">Веб-сайты</button>
+          </li>
+          <li class="btn-item">
+            <button class="button" type="button">Приложения</button>
+          </li>
+          <li class="btn-item">
+            <button class="button" type="button">Дизайн</button>
+          </li>
+          <li class="btn-item">
+            <button class="button" type="button">Маркетинг</button>
+          </li>
         </ul>
 
-        <ul class="product-items">
+        <ul class="product-list">
           <li class="product-item">
-            <img src="./images/portfolio-img.jpg" alt="Технокряк" width="370" />
-            <h3 class="image-name">Технокряк</h3>
-            <p class="image-desc">Веб-сайт</p>
-          </li>
-          <li class="product-item">
-            <img src="./images/portfolio-img1.jpg" alt="Постер" width="370" />
-            <h3 class="image-name">Постер New Orlean vs Golden Star</h3>
-            <p class="image-desc">Дизайн</p>
+            <img
+              class="image"
+              src="./images/portfolio-img.jpg"
+              alt="Технокряк"
+              width="370"
+            />
+            <div class="image-card">
+              <h3 class="image-name">Технокряк</h3>
+              <p class="image-desc">Веб-сайт</p>
+            </div>
           </li>
           <li class="product-item">
             <img
+              class="image"
+              src="./images/portfolio-img1.jpg"
+              alt="Постер"
+              width="370"
+            />
+            <div class="image-card">
+              <h3 class="image-name">Постер New Orlean vs Golden Star</h3>
+              <p class="image-desc">Дизайн</p>
+            </div>
+          </li>
+          <li class="product-item">
+            <img
+              class="image"
               src="./images/portfolio-img2.jpg"
               alt="Ресторан Seafood"
               width="370"
             />
-            <h3 class="image-name">Ресторан Seafood</h3>
-            <p class="image-desc">Приложение</p>
+            <div class="image-card">
+              <h3 class="image-name">Ресторан Seafood</h3>
+              <p class="image-desc">Приложение</p>
+            </div>
           </li>
           <li class="product-item">
             <img
+              class="image"
               src="./images/portfolio-img3.jpg"
               alt="Проект Prime"
               width="370"
             />
-            <h3 class="image-name">Проект Prime</h3>
-            <p class="image-desc">Маркетинг</p>
+            <div class="image-card">
+              <h3 class="image-name">Проект Prime</h3>
+              <p class="image-desc">Маркетинг</p>
+            </div>
           </li>
           <li class="product-item">
             <img
+              class="image"
               src="./images/portfolio-img4.jpg"
               alt="Проект Boxes"
               width="370"
             />
-            <h3 class="image-name">Проект Boxes</h3>
-            <p class="image-desc">Приложение</p>
+            <div class="image-card">
+              <h3 class="image-name">Проект Boxes</h3>
+              <p class="image-desc">Приложение</p>
+            </div>
           </li>
           <li class="product-item">
             <img
+              class="image"
               src="./images/portfolio-img5.jpg"
               alt="Inspiration has no Borders"
               width="370"
             />
-            <h3 class="image-name">Inspiration has no Borders</h3>
-            <p class="image-desc">Веб-сайт</p>
+            <div class="image-card">
+              <h3 class="image-name">Inspiration has no Borders</h3>
+              <p class="image-desc">Веб-сайт</p>
+            </div>
           </li>
           <li class="product-item">
             <img
+              class="image"
               src="./images/portfolio-img6.jpg"
               alt="Издание Limited Edition"
               width="370"
             />
-            <h3 class="image-name">Издание Limited Edition</h3>
-            <p class="image-desc">Дизайн</p>
+            <div class="image-card">
+              <h3 class="image-name">Издание Limited Edition</h3>
+              <p class="image-desc">Дизайн</p>
+            </div>
           </li>
           <li class="product-item">
-            <img src="./images/portfolio-img7.jpg" alt="Проект LAB" />
-            <h3 class="image-name">Проект LAB</h3>
-            <p class="image-desc">Маркетинг</p>
+            <img
+              class="image"
+              src="./images/portfolio-img7.jpg"
+              alt="Проект LAB"
+            />
+            <div class="image-card">
+              <h3 class="image-name">Проект LAB</h3>
+              <p class="image-desc">Маркетинг</p>
+            </div>
           </li>
           <li class="product-item">
-            <img src="./images/portfolio-img8.jpg" alt="Growing Business" />
-            <h3 class="image-name">Growing Business</h3>
-            <p class="image-desc">Приложение</p>
+            <img
+              class="image"
+              src="./images/portfolio-img8.jpg"
+              alt="Growing Business"
+            />
+            <div class="image-card">
+              <h3 class="image-name">Growing Business</h3>
+              <p class="image-desc">Приложение</p>
+            </div>
           </li>
         </ul>
       </div>

@@ -9,6 +9,8 @@
   --main-button-hover: #188ce8;
   --header-border: #ececec;
   --image-border: #eeee;
+  --btn-color: #f5f4fa;
+  --overlay-color: rgba(47, 48, 58, 0.4);
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -117,6 +119,7 @@ a {
 }
 .contacts {
   color: var(--sub-text-color);
+  display: flex;
 }
 .contacts:hover,
 .contacts:focus {
@@ -145,11 +148,19 @@ a {
   margin-right: 0;
 }
 .main {
-  background: var(--background-color);
+  background-image: linear-gradient(
+      to right,
+      var(--overlay-color),
+      var(--overlay-color)
+    ),
+    url(../images/background.jpg);
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  height: 600px;
+  max-width: 1600px;
 }
+
 .main-title {
   font-weight: 900;
   font-size: 44px;
@@ -199,6 +210,7 @@ a {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--sub-text-color);
+  padding-right: 5px;
 }
 .title {
   font-weight: 700;
@@ -221,6 +233,7 @@ a {
   background: var(--section-color);
 }
 .user-card {
+  width: 270px;
   margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -289,7 +302,7 @@ a {
   line-height: 1.625;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  background: var(--section-color);
+  background: var(--btn-color);
   border: 0;
   border-radius: 4px;
   padding: 6px 22px;
@@ -352,4 +365,38 @@ img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.contact-icon {
+  width: 16px;
+  height: 16px;
+  stroke-width: 0;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.contact-icon:hover {
+  fill: currentColor;
+}
+.case-icon {
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  background-color: var(--btn-color);
+  margin-bottom: 30px;
+}
+.user-message {
+  display: flex;
+  padding: 0 32px 30px;
+  justify-content: center;
+}
+.user-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 20px;
+  border-color: var(--main-button-hover);
+  border: 1px solid;
+  margin-right: 10px;
+}
+.user-icon:last-child {
+  margin-right: 0;
 }

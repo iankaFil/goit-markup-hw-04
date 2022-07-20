@@ -15,12 +15,12 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!--------------------HEADER--------------------->
     <header class="header-menu">
       <div class="header container">
         <nav class="navigation">
           <a href="index.html" class="logo">
-            <span class="logo accent">Web</span>Studio</a
-          >
+          <span class="logo accent">Web</span>Studio</a>
           <ul class="menu-list">
             <li class="menu-item">
               <a href="./index.html" class="nav-item">Студия</a>
@@ -35,16 +35,21 @@
         </nav>
         <ul class="contact-list">
           <li class="contact-item">
-            <a href="mailto:info@devstudio.com" class="contacts"
-              >info@devstudio.com</a
-            >
+            <a href="mailto:info@devstudio.com" class="contacts">
+            <svg class="contact-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-mail"></use>
+            </svg>info@devstudio.com</a>
           </li>
           <li class="contact-item">
-            <a href="tel:+38096111111" class="contacts">+38 096 111 11 11</a>
+            <a href="tel:+38096111111" class="contacts">
+              <svg class="contact-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
     </header>
+    <!--------------------PRODUCTS BUTTON LIST--------------------->
     <section class="section">
       <div class="container">
         <h2 class="visually-hidden">Список</h2>
@@ -65,15 +70,14 @@
             <button class="button" type="button">Маркетинг</button>
           </li>
         </ul>
-
+    <!--------------------PRODUCTS SECTION LIST--------------------->
         <ul class="product-list">
           <li class="product-item">
             <img
               class="image"
               src="./images/portfolio-img.jpg"
               alt="Технокряк"
-              width="370"
-            />
+              width="370"/>
             <div class="image-card">
               <h3 class="image-name">Технокряк</h3>
               <p class="image-desc">Веб-сайт</p>
@@ -84,8 +88,7 @@
               class="image"
               src="./images/portfolio-img1.jpg"
               alt="Постер"
-              width="370"
-            />
+              width="370"/>
             <div class="image-card">
               <h3 class="image-name">Постер New Orlean vs Golden Star</h3>
               <p class="image-desc">Дизайн</p>
@@ -96,8 +99,7 @@
               class="image"
               src="./images/portfolio-img2.jpg"
               alt="Ресторан Seafood"
-              width="370"
-            />
+              width="370"/>
             <div class="image-card">
               <h3 class="image-name">Ресторан Seafood</h3>
               <p class="image-desc">Приложение</p>
@@ -108,8 +110,7 @@
               class="image"
               src="./images/portfolio-img3.jpg"
               alt="Проект Prime"
-              width="370"
-            />
+              width="370"/>
             <div class="image-card">
               <h3 class="image-name">Проект Prime</h3>
               <p class="image-desc">Маркетинг</p>
@@ -120,8 +121,7 @@
               class="image"
               src="./images/portfolio-img4.jpg"
               alt="Проект Boxes"
-              width="370"
-            />
+              width="370"/>
             <div class="image-card">
               <h3 class="image-name">Проект Boxes</h3>
               <p class="image-desc">Приложение</p>
@@ -132,8 +132,7 @@
               class="image"
               src="./images/portfolio-img5.jpg"
               alt="Inspiration has no Borders"
-              width="370"
-            />
+              width="370"/>
             <div class="image-card">
               <h3 class="image-name">Inspiration has no Borders</h3>
               <p class="image-desc">Веб-сайт</p>
@@ -144,8 +143,7 @@
               class="image"
               src="./images/portfolio-img6.jpg"
               alt="Издание Limited Edition"
-              width="370"
-            />
+              width="370"/>
             <div class="image-card">
               <h3 class="image-name">Издание Limited Edition</h3>
               <p class="image-desc">Дизайн</p>
@@ -155,8 +153,7 @@
             <img
               class="image"
               src="./images/portfolio-img7.jpg"
-              alt="Проект LAB"
-            />
+              alt="Проект LAB"/>
             <div class="image-card">
               <h3 class="image-name">Проект LAB</h3>
               <p class="image-desc">Маркетинг</p>
@@ -166,8 +163,7 @@
             <img
               class="image"
               src="./images/portfolio-img8.jpg"
-              alt="Growing Business"
-            />
+              alt="Growing Business"/>
             <div class="image-card">
               <h3 class="image-name">Growing Business</h3>
               <p class="image-desc">Приложение</p>
@@ -176,32 +172,61 @@
         </ul>
       </div>
     </section>
-
+    <!--------------------FOOTER--------------------->
     <footer class="footer section">
       <div class="container">
-        <a href="index.html" class="logo-footer">
-          <span class="accent logo-footer">Web</span>Studio</a
-        >
-        <address class="address-list">
-          <ul class="address-items">
-            <li class="address-list-item">
-              <a href="adress" class="address"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
-            </li>
-            <li class="address-list-item">
-              <a href="mailto:info@devstudio.com" class="address-item"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="address-list-item">
-              <a href="tel:+38096111111" class="address-item"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
+        <div class="first-footer-container">
+      <a href="index.html" class="logo-footer">
+        <span class="accent logo-footer">Web</span>Studio</a>
+      <address class="address-list">
+        <ul class="address-items">
+          <li class="address-list-item">
+            <a href="adress" class="address"
+              >г. Киев, пр-т Леси Украинки, 26</a>
+          </li>
+          <li class="address-list-item">
+            <a href="mailto:info@devstudio.com" class="address-item">info@devstudio.com</a>
+          </li>
+          <li class="address-list-item">
+            <a href="tel:+38096111111" class="address-item">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </address>
+    </div>
+      <div class="second-footer-container">
+        <h3 class="subtitle footer-title">присоединяйтесь</h3>
+      <ul class="footer-social">
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="">
+            <svg class="footer-icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>  
+        </li>
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="">
+            <svg class="footer-icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>  
+        </li>
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="">
+            <svg class="footer-icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="">
+            <svg class="footer-icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>  
+        </li>
+      </ul>
       </div>
+    </div>
     </footer>
   </body>
 </html>

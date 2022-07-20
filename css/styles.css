@@ -288,7 +288,7 @@ a {
 .client-list{
   display: flex;
   fill:var(--icon-color);
-  justify-content: space-between;
+  gap: 30px;
 }
 .clients{
   display: flex;

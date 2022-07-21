@@ -50,6 +50,7 @@ a {
 }
 .section {
   padding: 94px 0;
+  margin: 0 auto;
 }
 .visually-hidden {
   position: absolute;
